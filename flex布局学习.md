@@ -55,16 +55,11 @@ Flex 布局时一定要使用容器 （.container ）如：
  - `column`  主轴垂直，子项从上到下
  - `column-reverse`  主轴垂直，子项从下到上
 
-如下图：
+如下图：111
 
-![](assets/flex-direction-row-2025-09-30_18-05-07.png)
+![](assets/flex-1-2025-10-01_01-14-34.png)
 
-![](assets/flex-direction-row-reverse-20250930181058.png)
-
-![](assets/flex-direction-column-20250930182207.png)
-
-![](assets/flex-direction-colunm-reverse-20250930182219.png)
-
+![](assets/flex-2-2025-10-01_01-13-46.png)
 
 `flex-wrap` 决定容器内项目是否可换行
 
@@ -74,11 +69,9 @@ Flex 布局时一定要使用容器 （.container ）如：
 
 如下图：
 
-![](assets/flex-wrap-nowrap-2025-10-01_00-35-05.png)
+![](assets/flex-3-2025-10-01_01-14-34.png)
 
-![](assets/flex-wrap-wrap-2025-10-01_00-36-43.png)
-
-![](assets/flex-wrap-wrap-reverse-2025-10-01_00-37-17.png)
+![](assets/flex-4-2025-10-01_01-26-42.png)
 
 
 `flex-flow` 是 `flex-direction` 和 `flex-wrap` 的简写形式。
@@ -100,6 +93,11 @@ Flex 布局时一定要使用容器 （.container ）如：
 - `space-around`  每个子项两侧间距相等（中间大，两边小）
 - `space-evenly`  所有间距相等（包含边缘）
 
+![](assets/flex-5-2025-10-01_01-36-40.png)
+
+![](assets/flex-6-2025-10-01_01-37-22.png)
+
+![](assets/flex-7-2025-10-01_01-39-58.png)
 
 `align-items` 单行时，沿交叉轴（cross axis）的对齐方式。
 
