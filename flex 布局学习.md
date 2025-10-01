@@ -2,7 +2,7 @@
 
 ## Flex 基本概念
 
- Flex叫弹性布局，叫  **CSS Flexbox（Flexible Box Layout）** 是一个非常常有的前端布局方法。 
+ Flex 叫弹性布局，叫  **CSS Flexbox（Flexible Box Layout）** 是一个非常常有的前端布局方法。 
 
 主要的作用是 在一条轴上（横轴或纵轴）进行高效的排列元素。 
 
@@ -41,12 +41,12 @@ Flex 布局时一定要使用容器 （.container ）如：
 
 容器上可以设置6种属性
 
-1. flex-direction
-2. flex-wrap
-3. flex-flow
-4. justify-content
-5. align-items
-6. align-content
+1. `flex-direction`
+2. `flex-wrap`
+3. `flex-flow`
+4. `justify-content`
+5. `align-items`
+6. `align-content`
 
 `flex-direction` 定义主轴的方向
 
@@ -55,11 +55,11 @@ Flex 布局时一定要使用容器 （.container ）如：
  - `column`  主轴垂直，子项从上到下
  - `column-reverse`  主轴垂直，子项从下到上
 
-如下图：111
+如下图：
 
-![](assets/flex-1-2025-10-01_01-14-34.png)
+![](assets/flex-1-2025-10-01_13-58-30.png)
 
-![](assets/flex-2-2025-10-01_01-13-46.png)
+![](assets/flex-2-2025-10-01_13-58-57.png)
 
 `flex-wrap` 决定容器内项目是否可换行
 
@@ -69,9 +69,10 @@ Flex 布局时一定要使用容器 （.container ）如：
 
 如下图：
 
-![](assets/flex-3-2025-10-01_01-14-34.png)
+![](assets/flex-3-2025-10-01_13-59-29.png)
 
-![](assets/flex-4-2025-10-01_01-26-42.png)
+![](assets/flex-4-2025-10-01_14-00-09.png)
+
 
 
 `flex-flow` 是 `flex-direction` 和 `flex-wrap` 的简写形式。
@@ -93,11 +94,10 @@ Flex 布局时一定要使用容器 （.container ）如：
 - `space-around`  每个子项两侧间距相等（中间大，两边小）
 - `space-evenly`  所有间距相等（包含边缘）
 
-![](assets/flex-5-2025-10-01_01-36-40.png)
+![](assets/flex-4-2025-10-01_14-00-09.png)
 
-![](assets/flex-6-2025-10-01_01-37-22.png)
+![](assets/flex-5-2025-10-01_14-00-35.png)
 
-![](assets/flex-7-2025-10-01_01-39-58.png)
 
 `align-items` 单行时，沿交叉轴（cross axis）的对齐方式。
 
@@ -139,13 +139,6 @@ Flex 布局时一定要使用容器 （.container ）如：
 ![](assets/flex-align-item-2025-10-01_13-49-19.png)
 
 ![](assets/flex-align-item-2025-10-01_13-49-39.png)
-
-
-
-
-
-
-
 
 
 
