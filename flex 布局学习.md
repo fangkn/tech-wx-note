@@ -107,9 +107,13 @@ Flex 布局时一定要使用容器 （.container ）如：
 - `center` 居中
 - `baseline` 文字基线对齐
 
+![](assets/flex-align-item-2025-10-01_13-46-48.png)
+
+![](assets/flex-align-item-2025-10-01_13-47-51.png)
+
 `align-content`多行时，整个内容块在交叉轴上的对齐方式（作用于多行整体）。
 
- - `stretch`（默认） 各行均匀拉伸填满容器
+ - `stretch`（默认） 各行均匀拉伸填满容器，即不做设置也是填满容器。（在例子中，可以把 `align-items:stretch;` 去掉，效果是一样的）
  - `flex-start` 靠交叉轴起点
  - `flex-end` 靠交叉轴终点
  - `center` 居中
@@ -117,8 +121,24 @@ Flex 布局时一定要使用容器 （.container ）如：
  - `space-around` 每行上下间距相等
  - `space-evenly` 所有间距（包括边缘）相等
 
+![](assets/flex-align-item-2025-10-01_13-48-19.png)
 
+![](assets/flex-align-item-2025-10-01_13-48-50.png)
 
+## Flex 项目属性
+
+有六种属性可运用在 item 项目上：
+
+- `order`  定义项目的排列顺序，数值越小越靠前（默认 0）
+- `flex-basis`  定义项目的初始大小，默认值为 auto，即项目的本来大小
+- `flex-grow`  定义项目的放大比例，默认值为 0，即不放大
+- `flex-shrink`  定义项目的缩小比例，默认值为 1，即如果空间不足，该项目将缩小
+- `flex`  是 `flex-grow`, `flex-shrink` 和 `flex-basis` 的简写，默认值为 `0 1 auto`
+- `align-self`  定义项目在交叉轴上的对齐方式，默认值为 auto，即继承容器的 `align-items` 值
+
+![](assets/flex-align-item-2025-10-01_13-49-19.png)
+
+![](assets/flex-align-item-2025-10-01_13-49-39.png)
 
 
 
