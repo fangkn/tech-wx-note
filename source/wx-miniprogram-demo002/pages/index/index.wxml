@@ -1,0 +1,81 @@
+<!--index.wxml-->
+
+<view class="banner">
+<!--pages/swiper/swiper.wxml-->
+<swiper autoplay indicator-dots interval="5000" >  
+
+<swiper-item>
+<image src="/images/banner/image-1.jpg" mode="heightFix"/>
+</swiper-item>
+
+<swiper-item>
+  <image src="/images/banner/151-image-3.png" mode="heightFix"/>
+</swiper-item>
+
+<swiper-item>
+  <image src="/images/banner/151-image-2.png" mode="heightFix"/>
+</swiper-item>
+</swiper>
+</view>
+
+<view class="tips">
+ <text class ="iconfont icon-tishi  icon"> </text>
+  <text>欢迎来道我们的世界</text>
+</view>
+
+<view class="menu">
+  <view class="item">
+    <image src="/images/home/firtst.png" class="img"></image>
+    <text class="title">首页</text>
+  </view>
+  <view class="item">
+    <image src="/images/home/activity.png" class="img"></image>
+    <text class="title">活动</text>
+  </view>
+  <view class="item">
+    <image src="/images/home/context.png" class="img"></image>
+    <text class="title">合同</text>
+  </view>
+  <view class="item">
+    <image src="/images/home/admin.png" class="img"></image>
+    <text class="title">管理</text>
+  </view>
+  <view class="item">
+    <image src="/images/home/list.png" class="img"></image>
+    <text class="title">表格</text>
+  </view>
+  <view class="item">
+    <image src="/images/home/setting.png" class="img"></image>
+    <text class="title">设置</text>
+  </view>
+  <view class="item">
+    <image src="/images/home/area.png" class="img"></image>
+    <text class="title">区域 </text>
+  </view>
+  <view class="item">
+    <image src="/images/home/me.png" class="img"></image>
+    <text class="title">人员</text>
+  </view>
+</view>
+
+<view class="notice">
+<image src="/images/home/notice.png" mode="aspectFit" style="width: 200rpx; height: 100rpx"/>
+<text>通知公告:世界无产阶级万岁</text>
+</view>
+
+<view  class= "bottom">
+  <view>
+   <image src= "/images/home/scene_001.png" mode="scaleToFill"/>
+  </view>
+  <view>
+    <image src= "/images/home/scene_002.png" mode="scaleToFill"/>
+  </view>
+  <view>
+    <image src= "/images/home/scene_003.png" mode="scaleToFill"/>
+  </view>
+  <view>
+    <image src= "/images/home/scene_004.png" mode="scaleToFill"/>
+  </view>
+
+</view>
+

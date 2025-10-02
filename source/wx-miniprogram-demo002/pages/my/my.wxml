@@ -1,0 +1,21 @@
+<!--pages/my/my.wxml-->
+<text>模板语法：我的信息</text>
+
+<view>
+  <view>名字：{{name}}</view>
+  <view>年龄：{{age}}</view>
+  <view>性别：{{sex}}</view>
+  <view>电子邮件：{{email}}</view>
+  <view>电话：{{phone}}</view>
+  <view>地址：{{address}}</view>
+</view>
+
+<view>
+  <view>刘亦菲信息显示</view>
+  <view>名字是：{{userinfo.name}}</view>
+  <view>年龄：{{userinfo.age}}</view>
+  <view>性别：{{userinfo.sex}}</view>
+  <view>电子邮件：{{userinfo.email}}</view>
+  <view>电话：{{userinfo.phone}}</view>
+  <view>地址：{{userinfo.address}}</view>
+</view>

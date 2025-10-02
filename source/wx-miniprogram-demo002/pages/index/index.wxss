@@ -1,0 +1,86 @@
+/**index.wxss**/
+
+
+button{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+.button-sp-area{
+  margin: 0 auto;
+  width: 60%;
+}
+.mini-btn{
+  margin-right: 10rpx;
+}
+
+.tips{
+
+  /*背景色*/
+  background-color: #f5eedf;
+  /*字大小*/
+  font-size:30rpx; 
+  /*字 颜色*/
+  color : #e9abe9;
+  /*圆角效果*/
+  border-radius: 50prx;
+  /*距离上下左右距离*/
+  margin:30rpx 10rpx 30rpx 10rpx; 
+  padding-left: 10rpx;
+}
+
+.icon{
+  padding-right: 10rpx;
+}
+
+/* flex 布局 */
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+  padding: 16rpx;
+  border-radius: 10rpx;
+  flex-wrap: wrap;
+  /*background-color: powderblue;*/
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center ;
+  width: 150rpx;
+  height: 200rpx;
+  border  : rgb(192, 251,255) solid 1rpx;
+  margin: 1rpx;
+  /*background-color: powderblue; */
+}
+
+.img{
+  width: 110rpx;
+  height: 88rpx;
+  border-radius: 10rpx;
+}
+
+.notice{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.notice>text{
+  flex-grow: 1;
+  font-size: 40rpx;
+}
+
+.bottom{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bottom>view>image{
+  width: 345rpx;
+  padding: 10rpx;
+  height: 200rpx;
+}

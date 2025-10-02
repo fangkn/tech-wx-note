@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/swiper/swiper",
+    "pages/activity/activity",
+    "pages/admin/admin",
+    "pages/back/back"
+  ],
+  "window": {
+    "navigationBarTitleText": "功能演示",
+    "navigationBarBackgroundColor": "#0000FF",
+    "enablePullDownRefresh": false,
+    "backgroundColor": "#00FFFF",
+    "backgroundTextStyle": "dark"
+  },
+  "style": "v2",
+  "tabBar": {
+    "selectedColor": "#b4282d",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon/home.png",
+        "selectedIconPath": "images/icon/home_select.png"
+      },
+      {
+        "pagePath": "pages/activity/activity",
+        "text": "活动",
+        "iconPath": "images/icon/my.png",
+        "selectedIconPath": "images/icon/my_select.png"
+      },
+      {
+        "pagePath": "pages/swiper/swiper",
+        "text": "滑块",
+        "iconPath": "images/icon/my.png",
+        "selectedIconPath": "images/icon/my_select.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/icon/my.png",
+        "selectedIconPath": "images/icon/my_select.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+<!--pages/back/back.wxml-->
+<text>回退页面</text>
+<!--这个回退有点问题，不知道为什么-->
+<navigator open-type="navigateBack">
+<button  type="primary" >回退</button>
+</navigator>

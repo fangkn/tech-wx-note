@@ -1,0 +1,72 @@
+
+
+<view> 事件绑定：</view>
+
+<button type="warn" plain size= "mini" bind:tap="handleConsole"> 点击控制台打印 </button>
+
+<view> 事件冒泡：</view>
+
+<view style= "height: 200rpx; width: 750rpx; background-color:bisque;display: flex; justify-content: center;align-items: center;" bind:tap="handleParent">
+
+<button type="primary" plain bind:tap="handleChildren">冒泡了</button>
+<button type="primary" plain catch:tap="handleChildren">Stop冒泡了</button>
+
+</view>
+
+<view> 事件参数：</view>
+<button type="primary" plain size= "mini" bind:tap="handleClick01"> 点击传参 </button>
+
+<view> 事件参数：</view>
+<button type="primary" plain size= "mini"  bind:tap="handleClick02" data-id='1001' data-name='kn.fang'> 点击传参02 </button>
+
+<view> 组件跳转01： </view>
+
+<navigator url="/pages/admin/admin">
+  <button type="primary" plain>admin</button>
+</navigator>
+
+<view> 组件跳转02： </view>
+
+<navigator url="/pages/my/my" open-type="switchTab">
+  <button type="primary" plain>我的</button>
+</navigator>
+
+
+<view> 组件跳转02： navigate </view>
+
+<navigator url="/pages/back/back">
+  
+  <button type="primary" plain>我的（回退）</button>
+</navigator>
+
+<view> 组件跳转02： redirect </view>
+
+<navigator url="/pages/my/my" open-type="redirect">
+  <button type="primary" plain>我的</button>
+</navigator>
+
+<view> 组件跳转02： reLaunch </view>
+
+<navigator url="/pages/my/my" open-type="reLaunch">
+  <button type="primary" plain>我的</button>
+</navigator> 
+
+<view> 组件跳转02：navigateBack </view>
+
+<navigator url="/pages/my/my" open-type="navigateBack">
+  <button type="primary" plain>我的</button>
+</navigator> 
+
+<view> 组件跳转：带参数 </view>
+
+<navigator url="/pages/back/back?name=kn.fang&my=1314" >
+  <button type="primary" plain>带参数跳</button>
+</navigator> 
+
+<view> ===== 页面跳转：编程式 ====== </view>
+
+<button type="default" bind:tap="handlenavigateTo">handlenavigateTo</button>
+<button type="warn" bind:tap="handleredirectTo">handleredirectTo</button>
+<button type="primary" bind:tap="handleswitchTab">handleswitchTab</button>
+<button type="default" bind:tap="handlereLauch">handlereLauch</button>
+<button type="warn" bind:tap="handlenavigateBack">handlenavigateBack</button>

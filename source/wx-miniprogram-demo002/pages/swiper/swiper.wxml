@@ -1,0 +1,13 @@
+
+<view style="height: 300rpx; width: 750; background-color: pink;" ></view>
+
+<view class= "myfirstview">另一个view</view>
+
+<button size="mini" type="default"> 第一个按钮 </button>
+<button size="mini" type="warn">第二个按钮</button>
+<button size="mini" type="primary">第三个按钮</button>
+<button size="mini" type="primary" loading>第四个按钮</button>
+<button size="mini" type="primary" plain>第五个按钮</button>
+<button size="mini" type="primary" disabled>第五个按钮</button>
+
+<button size="mini" type="primary">第6个按钮</button>

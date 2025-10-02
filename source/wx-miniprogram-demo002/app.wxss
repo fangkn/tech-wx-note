@@ -1,0 +1,10 @@
+/**app.wxss**/  
+
+@import "./static/css/font.wxss" ; 
+
+.myfirstview{
+  height: 500rpx;
+  width: 750rpx;
+  background-color: aquamarine;
+  font-size: 16rpx;
+}
