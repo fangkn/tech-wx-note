@@ -165,5 +165,20 @@
     }
   },
   "active": "856796a12ea263c7",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "assets/小程序-vant-2025-10-08_11-50-15.png",
+    "source/wx-miniprogram-vant/miniprogram_npm/@vant/weapp/wxs/utils.wxs",
+    "source/wx-miniprogram-vant/miniprogram_npm/@vant/weapp/wxs/style.wxs",
+    "source/wx-miniprogram-vant/miniprogram_npm/@vant/weapp/wxs/object.wxs",
+    "source/wx-miniprogram-vant/miniprogram_npm/@vant/weapp/wxs/memoize.wxs",
+    "source/wx-miniprogram-vant/miniprogram_npm/@vant/weapp/wxs/bem.wxs",
+    "source/wx-miniprogram-vant/miniprogram_npm/@vant/weapp/wxs/array.wxs",
+    "source/wx-miniprogram-vant/miniprogram_npm/@vant/weapp/wxs/add-unit.wxs",
+    "source/wx-miniprogram-vant/miniprogram_npm/@vant/weapp/wxs",
+    "source/wx-miniprogram-vant/miniprogram_npm/@vant/weapp/uploader/utils.js",
+    "source/wx-miniprogram-vant/miniprogram_npm/@vant/weapp/uploader/utils.d.ts",
+    "assets/小程序-vant-2025-10-08_11-29-20.png",
+    "source/wx-miniprogram-vant/node_modules/@vant/weapp/README.md",
+    "微信小程序接入vant-weapp.md"
+  ]
 }
