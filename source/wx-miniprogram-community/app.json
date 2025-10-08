@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/index/index",
+    "pages/my/my",
+    "pages/activity/activity",
+    "pages/notice/notice"
+  ],
+  "window": {
+    "navigationBarTitleText": "智慧社区",
+    "navigationBarBackgroundColor": "#fff",
+    "enablePullDownRefresh": false,
+    "backgroundColor": "#00FFFF",
+    "backgroundTextStyle": "light",
+    "navigationBarTextStyle": "black",
+
+    "navigationStyle": "custom"
+  },
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-calendar": "@vant/weapp/calendar/index",
+     "van-cell": "@vant/weapp/cell/index"
+  },
+  "tabBar": {
+    "selectedColor": "#b4282d",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon/index.png",
+        "selectedIconPath": "images/icon/index_select.png"
+      },
+      {
+        "pagePath": "pages/activity/activity",
+        "text": "活动",
+        "iconPath": "images/icon/activity.png",
+        "selectedIconPath": "images/icon/activity_select.png"
+      },
+      {
+        "pagePath": "pages/notice/notice",
+        "text": "通知",
+        "iconPath": "images/icon/notice.png",
+        "selectedIconPath": "images/icon/notice_select.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/icon/my.png",
+        "selectedIconPath": "images/icon/my_select.png"
+      }
+    ]
+  },
+  
+
+  "rendererOptions": {
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+} 
