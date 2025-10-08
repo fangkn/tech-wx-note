@@ -19,7 +19,7 @@ AI 只助手，不是我们的“第二大脑”，别想以后有什么不懂�
 
 上一次用 pyhon django 框架还是刚毕业那会，把公司的一个项目的django 框架换成 flask 框架的。这一些本想用 fastapi 框架。但想想还是用 django 框架吧，也把 django 复习一下补一下以前没有记的笔记。python 太久没有用，进化太快了。新出了很多东西。 
 
-
+python django 笔记 ：[python-django笔记.md](./python-django笔记.md)
 
 
 
