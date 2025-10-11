@@ -2,7 +2,6 @@
 <view class="container">
 
 <!-- 轮播图-->
-
 <view class="banner">
 <!--pages/swiper/swiper.wxml-->
 <swiper autoplay indicator-dots interval="5000" >  
@@ -28,8 +27,41 @@
 </swiper-item>
 </swiper>
 </view>
+<!-- 通知-->
+<van-notice-bar left-icon="volume-o" >在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。</van-notice-bar>
 
-  <van-notice-bar left-icon="volume-o" >在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。</van-notice-bar>
+<!-- 快速入口-->
 
+<van-grid column-num="3">
+  <van-grid-item icon="/images/menu/data.png" text="信息采集" bind:click="gotoCollection"/>
+  <van-grid-item icon="/images/menu/activity.png" text="社区活动" bind:click="gotoActvity"/>
+  <van-grid-item icon="/images/menu/face.png" text="人脸检测" bind:click="gotoFace"/>
+  <van-grid-item icon="/images/menu/speech.png" text="语音识别" bind:click="gotoVoice"/>
+  <van-grid-item icon="/images/menu/heart.png" text="心率检测" bind:click="gotoHeart"/>
+  <van-grid-item icon="/images/menu/mall.png" text="积分商城" bind:click="gotoGoods"/>
+</van-grid>
+
+<!-- 底部-->
+
+<view class ="bottom">
+<view>
+<image src="/images/home/home_1.png" mode="scaleToFill"/> 
+</view>
+<view>
+<image src="/images/home/home_2.png" mode="scaleToFill"/> 
+</view>
+<view>
+<image src="/images/home/home_3.png" mode="scaleToFill"/> 
+</view>
+<view>
+<image src="/images/home/home_4.png" mode="scaleToFill"/> 
+</view>
+<view>
+<image src="/images/home/home_5.png" mode="scaleToFill"/> 
+</view>
+<view>
+<image src="/images/home/home_6.png" mode="scaleToFill"/> 
+</view>
+</view>
 
 </view>
