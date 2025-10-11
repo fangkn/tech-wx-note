@@ -1,10 +1,132 @@
 /**index.wxss**/
-page {
-  height: 100vh;
+
+/* 轮播图样式 */
+.banner {
+  width: 100%;
+  height: 400rpx;
+  margin-bottom: 20rpx;
+}
+
+.banner swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.banner swiper-item {
+  width: 100%;
+  height: 100%;
+}
+
+.banner swiper-item image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/* 通知栏样式 */
+.notice-container {
+  margin: 20rpx 0;
+  padding: 0 20rpx;
+}
+
+/* 原生通知栏样式 */
+.native-notice {
+  background-color: #fff7cc;
+  color: #ed6a0c;
+  padding: 20rpx;
+  font-size: 28rpx;
+  border-radius: 8rpx;
+  margin: 20rpx 0;
+  border: 1px solid #ffeaa7;
+  animation: scroll-text 10s linear infinite;
+}
+
+@keyframes scroll-text {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+button{
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+.button-sp-area{
+  margin: 0 auto;
+  width: 60%;
+}
+.mini-btn{
+  margin-right: 10rpx;
+}
+
+.tips{
+
+  /*背景色*/
+  background-color: #f5eedf;
+  /*字大小*/
+  font-size:30rpx; 
+  /*字 颜色*/
+  color : #e9abe9;
+  /*圆角效果*/
+  border-radius: 50prx;
+  /*距离上下左右距离*/
+  margin:30rpx 10rpx 30rpx 10rpx; 
+  padding-left: 10rpx;
+}
+
+.icon{
+  padding-right: 10rpx;
+}
+
+/* flex 布局 */
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+  padding: 16rpx;
+  border-radius: 10rpx;
+  flex-wrap: wrap;
+  /*background-color: powderblue;*/
+}
+
+.item{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center ;
+  width: 150rpx;
+  height: 200rpx;
+  border  : rgb(192, 251,255) solid 1rpx;
+  margin: 1rpx;
+  /*background-color: powderblue; */
 }
-.scrollarea {
-  flex: 1;
-  overflow-y: hidden;
+
+.img{
+  width: 110rpx;
+  height: 88rpx;
+  border-radius: 10rpx;
+}
+
+.notice{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.notice>text{
+  flex-grow: 1;
+  font-size: 40rpx;
+}
+
+.bottom{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bottom>view>image{
+  width: 345rpx;
+  padding: 10rpx;
+  height: 200rpx;
 }

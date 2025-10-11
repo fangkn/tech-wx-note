@@ -2,3 +2,4 @@
 source/.venv/
 source/community_service/db.sqlite3
 source/community_service/community_service/__pycache__/
+.obsidian/

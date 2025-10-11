@@ -1,7 +1,35 @@
-<van-button type="default">默认按钮</van-button>
-<van-button type="primary">主要按钮</van-button>
-<van-button type="info">信息按钮</van-button>
-<van-button type="warning">警告按钮</van-button>
-<van-button type="danger">危险按钮</van-button>
-<van-button plain type="primary">朴素按钮</van-button>
-<van-button plain type="info">朴素按钮</van-button>
+
+<view class="container">
+
+<!-- 轮播图-->
+
+<view class="banner">
+<!--pages/swiper/swiper.wxml-->
+<swiper autoplay indicator-dots interval="5000" >  
+
+<swiper-item>
+<image src="/images/banner/banner001.png" mode="aspectFill"/>
+</swiper-item>
+
+<swiper-item>
+  <image src="/images/banner/banner002.png" mode="aspectFill"/>
+</swiper-item>
+
+<swiper-item>
+  <image src="/images/banner/banner003.png" mode="aspectFill"/>
+</swiper-item>
+
+<swiper-item>
+  <image src="/images/banner/banner004.png" mode="aspectFill"/>
+</swiper-item>
+
+<swiper-item>
+  <image src="/images/banner/banner005.png" mode="aspectFill"/>
+</swiper-item>
+</swiper>
+</view>
+
+  <van-notice-bar left-icon="volume-o" >在代码阅读过程中人们说脏话的频率是衡量代码质量的唯一标准。</van-notice-bar>
+
+
+</view>

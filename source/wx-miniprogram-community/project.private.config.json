@@ -2,7 +2,7 @@
   "libVersion": "3.10.2",
   "projectname": "wx-miniprogram-vant",
   "setting": {
-    "urlCheck": true,
+    "urlCheck": false,
     "coverView": true,
     "lazyloadPlaceholderEnable": false,
     "skylineRenderEnable": false,

@@ -18,8 +18,8 @@
   },
   "usingComponents": {
     "van-button": "@vant/weapp/button/index",
-    "van-calendar": "@vant/weapp/calendar/index",
-     "van-cell": "@vant/weapp/cell/index"
+    "van-cell": "@vant/weapp/cell/index",
+    "van-notice-bar": "@vant/weapp/notice-bar/index"
   },
   "tabBar": {
     "selectedColor": "#b4282d",
