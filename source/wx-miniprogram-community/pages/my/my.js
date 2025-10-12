@@ -6,9 +6,11 @@ Page({
    */
   data: {
     userinfo:{
-      avatar:"/images/img/b.jpg",
+      avatar:"/images/my/my.png",
       name : "kn",
-      score: "9991"
+      score: "9991",  // 积分
+      coupon: "10",  // 优惠券
+      actConut: "100",  // 订单
     },
     servicePhone: '400-123-4567',
     serviceWeChat: 'wx-community'

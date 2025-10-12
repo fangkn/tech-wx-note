@@ -1,9 +1,10 @@
-<view class="my-page">
+<view class="container">
+
   <!-- 顶部用户信息 -->
   <view class="profile">
-    <image class="avatar" src="/images/bg/welcome.png" mode="aspectFill" />
+    <image class="avatar" src="{{userinfo.avatar}}" mode="aspectFill" />
     <view class="user-meta">
-      <text class="username">justin</text>
+      <text class="username">{{userinfo.name}}</text>
       <text class="user-desc">智慧社区用户</text>
     </view>
   </view>
@@ -11,19 +12,15 @@
   <!-- 统计栏 -->
   <view class="stats">
     <view class="stat-item">
-      <text class="stat-num">100</text>
-      <text class="stat-label">税分</text>
-    </view>
-    <view class="stat-item">
-      <text class="stat-num">55</text>
+      <text class="stat-num">{{userinfo.score}}</text>
       <text class="stat-label">积分</text>
     </view>
     <view class="stat-item">
-      <text class="stat-num">23</text>
+      <text class="stat-num">{{userinfo.coupon}}</text>
       <text class="stat-label">优惠券</text>
     </view>
     <view class="stat-item">
-      <text class="stat-num">58</text>
+      <text class="stat-num">{{userinfo.actConut}}</text>
       <text class="stat-label">活动</text>
     </view>
   </view>
