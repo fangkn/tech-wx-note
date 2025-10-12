@@ -1,1 +1,88 @@
-/* pages/my/my.wxss */
+
+/* 我的页面样式 */
+.my-page {
+  min-height: 100%;
+  background: #f5f6f7;
+}
+
+/* 顶部用户信息 */
+.profile {
+  background: #20a0a0;
+  padding: 40rpx 32rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.avatar {
+  width: 96rpx;
+  height: 96rpx;
+  border-radius: 50%;
+  border: 4rpx solid rgba(255,255,255,0.6);
+}
+.user-meta {
+  margin-left: 24rpx;
+  display: flex;
+  flex-direction: column;
+}
+.username {
+  color: #fff;
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.user-desc {
+  color: rgba(255,255,255,0.9);
+  font-size: 24rpx;
+  margin-top: 6rpx;
+}
+
+/* 统计栏 */
+.stats {
+  background: #20a0a0;
+  padding: 24rpx 0 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stat-num {
+  color: #fff;
+  font-size: 34rpx;
+  font-weight: 600;
+}
+.stat-label {
+  color: rgba(255,255,255,0.9);
+  font-size: 22rpx;
+  margin-top: 8rpx;
+}
+
+/* 功能列表 */
+.menu-list {
+  margin: 24rpx;
+  background: #fff;
+  border-radius: 16rpx;
+  overflow: hidden;
+  box-shadow: 0 8rpx 20rpx rgba(0,0,0,0.06);
+}
+.menu-item {
+  height: 100rpx;
+  padding: 0 32rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-item + .menu-item {
+  border-top: 1rpx solid #f0f0f0;
+}
+.menu-text {
+  color: #333;
+  font-size: 30rpx;
+}
+.menu-arrow {
+  color: #999;
+  font-size: 34rpx;
+}

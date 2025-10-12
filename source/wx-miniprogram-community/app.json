@@ -4,6 +4,7 @@
     "pages/index/index",
     "pages/my/my",
     "pages/activity/activity",
+    "pages/exchange/exchange",
     "pages/notice/notice"
   ],
   "window": {
@@ -58,4 +59,4 @@
   "componentFramework": "glass-easel",
   "sitemapLocation": "sitemap.json",
   "lazyCodeLoading": "requiredComponents"
-} 
+}

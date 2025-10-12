@@ -1,2 +1,50 @@
-<!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<view class="my-page">
+  <!-- 顶部用户信息 -->
+  <view class="profile">
+    <image class="avatar" src="/images/bg/welcome.png" mode="aspectFill" />
+    <view class="user-meta">
+      <text class="username">justin</text>
+      <text class="user-desc">智慧社区用户</text>
+    </view>
+  </view>
+
+  <!-- 统计栏 -->
+  <view class="stats">
+    <view class="stat-item">
+      <text class="stat-num">100</text>
+      <text class="stat-label">税分</text>
+    </view>
+    <view class="stat-item">
+      <text class="stat-num">55</text>
+      <text class="stat-label">积分</text>
+    </view>
+    <view class="stat-item">
+      <text class="stat-num">23</text>
+      <text class="stat-label">优惠券</text>
+    </view>
+    <view class="stat-item">
+      <text class="stat-num">58</text>
+      <text class="stat-label">活动</text>
+    </view>
+  </view>
+
+  <!-- 功能入口列表 -->
+  <view class="menu-list">
+    <view class="menu-item" bindtap="goExchange">
+      <text class="menu-text">税分兑换记录</text>
+      <text class="menu-arrow">›</text>
+    </view>
+    <view class="menu-item" bindtap="goMyActivity">
+      <text class="menu-text">我参加的活动</text>
+      <text class="menu-arrow">›</text>
+    </view>
+    <view class="menu-item" bindtap="shareApp">
+      <text class="menu-text">分享应用</text>
+      <text class="menu-arrow">›</text>
+    </view>
+    <view class="menu-item" bindtap="contactService">
+      <text class="menu-text">联系客服</text>
+      <text class="menu-arrow">›</text>
+    </view>
+  </view>
+</view>

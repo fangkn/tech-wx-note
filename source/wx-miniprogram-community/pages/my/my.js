@@ -5,7 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    userinfo:{
+      avatar:"/images/img/b.jpg",
+      name : "kn",
+      score: "9991"
+    },
+    servicePhone: '400-123-4567',
+    serviceWeChat: 'wx-community'
   },
 
   /**
@@ -61,6 +67,42 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage() {
-
+    return {
+      title: '智慧社区应用',
+      path: '/pages/index/index'
+    }
+  }
+  ,
+  // 税分兑换记录
+  goExchange(){
+    wx.navigateTo({
+      url: '/pages/exchange/exchange'
+    })
+  },
+  // 我参加的活动
+  goMyActivity(){
+    wx.navigateTo({
+      url: '/pages/activity/activity'
+    })
+  },
+  // 分享应用（可额外触发分享菜单）
+  shareApp(){
+    wx.showShareMenu({
+      withShareTicket: true
+    })
+  },
+  // 联系客服
+  contactService(){
+    const { servicePhone, serviceWeChat } = this.data
+    wx.showActionSheet({
+      itemList: ['拨打电话', '复制微信号'],
+      success: (res) => {
+        if (res.tapIndex === 0) {
+          wx.makePhoneCall({ phoneNumber: servicePhone })
+        } else if (res.tapIndex === 1) {
+          wx.setClipboardData({ data: serviceWeChat })
+        }
+      }
+    })
   }
 })
