@@ -24,6 +24,8 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('community/welcome/', views.welcome, name='welcome'),
     path('media/<path:path>', serve, {'document_root': settings.MEDIA_ROOT}),
+    path('community/welcome/', views.welcome, name='welcome'),
+    path('community/banner/', views.banner, name='banner'),
+    path('community/notice/', views.notice, name='notice'),
 ]

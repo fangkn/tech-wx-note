@@ -6,25 +6,12 @@
 <!--pages/swiper/swiper.wxml-->
 <swiper autoplay indicator-dots interval="5000" >  
 
-<swiper-item>
-<image src="/images/banner/banner001.png" mode="aspectFill"/>
-</swiper-item>
+<block wx:for="{{bannerList}}" wx:key="*this">
+  <swiper-item>
+    <image src="{{item}}" mode="aspectFill"/>
+  </swiper-item>
+</block>
 
-<swiper-item>
-  <image src="/images/banner/banner002.png" mode="aspectFill"/>
-</swiper-item>
-
-<swiper-item>
-  <image src="/images/banner/banner003.png" mode="aspectFill"/>
-</swiper-item>
-
-<swiper-item>
-  <image src="/images/banner/banner004.png" mode="aspectFill"/>
-</swiper-item>
-
-<swiper-item>
-  <image src="/images/banner/banner005.png" mode="aspectFill"/>
-</swiper-item>
 </swiper>
 </view>
 <!-- 通知-->
