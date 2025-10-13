@@ -5,7 +5,12 @@
     "pages/my/my",
     "pages/activity/activity",
     "pages/exchange/exchange",
-    "pages/notice/notice"
+    "pages/notice/notice",
+    "pages/collection/collection",
+    "pages/heart/heart",
+    "pages/goods/goods",
+    "pages/voice/voice",
+    "pages/face/face"
   ],
   "window": {
     "navigationBarTitleText": "智慧社区",
