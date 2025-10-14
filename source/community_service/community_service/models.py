@@ -31,6 +31,7 @@ class Notice(models.Model):
     title = models.CharField(max_length=255, default='',verbose_name='公告标题')
     content = models.TextField(default='',verbose_name='公告内容')
     img = models.ImageField(upload_to='notice', default='bg/notice.png',verbose_name='公告图片')
+    order = models.IntegerField(default=0,verbose_name='公告排序')
     is_deleted = models.BooleanField(default=False,verbose_name='是否删除')
     create_time = models.DateTimeField(auto_now_add=True,verbose_name='创建时间')
 

@@ -1,8 +1,9 @@
 // index.js
 Page({
   data: {
-    //date: '',
-    bannerList: [],
+    
+    bannerList: [{"img":"/images/banner/banner001.png","order": 100}],
+    noticeList:[{"title":"通知标题","content":"这是一条本地通知！","img":"","order": 100}]
   },
 
   /**
@@ -14,7 +15,7 @@ Page({
     
     // 请求后端接口，加载banner数据
     wx.request({
-      url: 'http://127.0.0.1:8000/community/banner',
+      url: 'http://127.0.0.1:8000/community/index',
       method: 'GET',
       success: (res) => {
         console.log(res)
