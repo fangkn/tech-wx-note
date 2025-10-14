@@ -1,9 +1,12 @@
 // index.js
+const settings = require('../../config/settings.js')
+
 Page({
   data: {
     
-    bannerList: [{"img":"/images/banner/banner001.png","order": 100}],
-    noticeList:[{"title":"通知标题","content":"这是一条本地通知！","img":"","order": 100}]
+    banner_list: [{"img":"/images/banner/banner001.png","order": 100}],
+    notice_list:[{"title":"通知标题","content":"这是一条本地通知！","img":"","order": 100}],
+    bottom_list:[{"img":"/images/home/home_1.png","order": 100}]
   },
 
   /**
@@ -11,32 +14,46 @@ Page({
    */
   onLoad(options) {
 
-    console.log('加载banner数据')
+    console.log('加载index 数据')
     
-    // 请求后端接口，加载banner数据
+    //请求后端接口，加载主页数据
     wx.request({
-      url: 'http://127.0.0.1:8000/community/index',
+      url: settings.index_url,
       method: 'GET',
       success: (res) => {
         console.log(res)
         if (res.data.code == 0) {
-          list = res.data.result
-
+          var banners = res.data.data.banner_list
+          
           // 对list 排序
-          list.sort((a, b) => {
+          banners.sort((a, b) => {
             return b.sort - a.sort
           })
-          // 取出 list 中的  img 字段
-          imgList = list.map(item => item.img)
+          
+          var notices = res.data.data.notice_list
+          // 对list 排序
+          notices.sort((a, b) => {
+            return b.sort - a.sort
+          })
+
+          var bottoms = res.data.data.bottom_list
+          // 对list 排序
+          bottoms.sort((a, b) => {
+            return b.sort - a.sort
+          })
+      
           this.setData({
-            bannerList: imgList
+            banner_list: banners,
+            notice_list: notices,
+            bottom_list: bottoms
           })
         }else {
+          console.log('请求失败:'+res.data.msg)
           wx.showToast({
             title: "请求网络异常",
           })
         }
-      }
+      } 
     })
   },
 

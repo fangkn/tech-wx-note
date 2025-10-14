@@ -1,4 +1,5 @@
 // pages/welcome/welcome.js
+const settings = require('../../config/settings.js')
 Page({
 
   /**
@@ -24,7 +25,7 @@ Page({
     
     // 请求后端接口，加载背景图
     wx.request({
-      url: 'http://127.0.0.1:8000/community/welcome',
+      url: settings.welcome_url,
       method: 'GET',
       success: (res) => {
         console.log(res)

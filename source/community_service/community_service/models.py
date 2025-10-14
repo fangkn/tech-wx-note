@@ -39,3 +39,14 @@ class Notice(models.Model):
         verbose_name_plural = '公告表'
     def __str__(self):
         return str(self.title)
+
+class Bottom(models.Model):
+    img = models.ImageField(upload_to='bottom', default='bg/bottom.png',verbose_name='底部图片')
+    order = models.IntegerField(default=0,verbose_name='底部排序')
+    is_deleted = models.BooleanField(default=False,verbose_name='是否删除')
+    create_time = models.DateTimeField(auto_now_add=True,verbose_name='创建时间')
+
+    class Meta:
+        verbose_name_plural = '底部表'
+    def __str__(self):
+        return str(self.img)

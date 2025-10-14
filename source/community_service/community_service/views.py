@@ -2,6 +2,7 @@
 from .models import Welcome
 from .models import Banner
 from .models import Notice
+from .models import Bottom
 from .utils import JsonResponse
 
 def welcome(request):
@@ -21,19 +22,29 @@ def index(request):
             'order': item.order,
         })
 
-    data['bannerList'] = bannerList
+    data['banner_list'] = bannerList
 
     noticeResp = Notice.objects.all().order_by('order')
-    data['noticeList'] = []
+    data['notice_list'] = []
     for item in noticeResp:
         if not item.is_deleted:
-            data['noticeList'].append({
+            data['notice_list'].append({
                 'title': item.title,
                 'content': item.content,
                 'img': 'http://127.0.0.1:8000/media/' + str(item.img),
                 'order': item.order,
                 'create_time': item.create_time.strftime('%Y-%m-%d %H:%M:%S'),
             })
+            
+    bottomResp = Bottom.objects.all().order_by('order')
+    data['bottom_list'] = []
+    for item in bottomResp:
+        if not item.is_deleted:
+            data['bottom_list'].append({
+                'img': 'http://127.0.0.1:8000/media/' + str(item.img),
+                'order': item.order,
+            })
+            
     return JsonResponse({'code': 0, 'msg': '成功', 'data': data})
     
 
