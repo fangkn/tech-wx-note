@@ -1,1 +1,113 @@
-/* pages/collection/collection.wxss */
+
+.page { 
+  background: #f7f7f7;
+  min-height: 100vh;
+}
+
+.header {
+  background: #22c1b7;
+  padding: 40rpx 30rpx 60rpx;  /* 上内边距： 40rpx｜左右内边距： 30rpx｜下内边距： 60rpx */
+  color: #fff;
+  text-align: center;
+}
+
+.header-text {
+  font-size: 28rpx;
+  opacity: 0.9; /*opacity 控制元素整体透明度 0 ：完全透明，1 ：完全不透明 */
+}
+
+.count {
+  font-size: 80rpx;
+  font-weight: bold;
+  margin-top: 20rpx;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 20rpx 0;
+}
+
+.tab {
+  padding: 10rpx 20rpx;
+  color: #666;
+  font-size: 28rpx;
+}
+
+.tab.active {
+  color: #22c1b7;
+  font-weight: 600;
+}
+
+.divider {
+  width: 1px;
+  height: 36rpx;
+  background: #e5e5e5;
+  margin: 0 30rpx;
+}
+
+.list {
+  background: #fff;
+}
+
+.list-title {
+  padding: 24rpx 30rpx;
+  font-size: 26rpx;
+  color: #888;
+}
+
+.member-item {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 30rpx;
+  border-top: 1px solid #f0f0f0;
+}
+
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 16rpx;
+  background: #eee;
+}
+
+.info {
+  flex: 1; /*让该区域在父容器为弹性布局时占据剩余可用空间*/
+  margin-left: 24rpx; /*左侧留出 24rpx 的间距（与头像拉开距离）*/
+}
+
+.name {
+  font-size: 32rpx;
+  color: #333;
+}
+
+.region {
+  margin-top: 8rpx;
+  font-size: 26rpx;
+  color: #999;
+}
+
+.building {
+  margin-top: 8rpx;
+  font-size: 30rpx;
+  color: #22c1b7;
+  font-weight: 600;
+}
+
+.delete {
+  color: #f54e4e;
+  font-size: 26rpx;
+  padding: 12rpx 20rpx;
+}
+
+.stats {
+  background: #fff;
+  padding: 30rpx;
+}
+
+.stat-item {
+  font-size: 28rpx;
+  color: #333;
+  padding: 12rpx 0;
+}

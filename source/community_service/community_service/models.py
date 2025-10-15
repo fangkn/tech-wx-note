@@ -50,3 +50,44 @@ class Bottom(models.Model):
         verbose_name_plural = '底部表'
     def __str__(self):
         return str(self.img)
+
+
+class Collecton(models.Model):
+    name = models.CharField(max_length=255, default='',verbose_name='采集人姓名')
+    name_pingyin = models.CharField(max_length=255, default='',verbose_name='采集人姓名拼音', null=True)
+    avatar = models.ImageField(upload_to='collecton/%Y/%m/%d/',default='default.png',verbose_name='采集人头像')
+    is_deleted = models.BooleanField(default=False,verbose_name='是否删除')
+    create_time = models.DateTimeField(auto_now_add=True,verbose_name='采集时间')
+    area = models.ForeignKey('Area', null=True, verbose_name='风格区域', on_delete=models.CASCADE)
+
+    class Meta:
+        verbose_name_plural = '采集表'
+    def __str__(self):
+        return str(self.name)
+
+class Area(models.Model):
+    name = models.CharField(max_length=255, default='',verbose_name='区域名称')
+    desc = models.TextField(default='',verbose_name='区域简称')
+    is_deleted = models.BooleanField(default=False,verbose_name='是否删除')
+    create_time = models.DateTimeField(auto_now_add=True,verbose_name='创建时间')
+    user = models.ForeignKey(to='UserInfo', null=True, verbose_name='负责用户', on_delete=models.CASCADE) # 和用户 是一对多的关系，一个用户可以负责多个区域
+
+    class Meta:
+        verbose_name_plural = '区域表'
+    def __str__(self):
+        return str(self.name)
+
+class UserInfo(models.Model):
+    name = models.CharField(max_length=255, default='',verbose_name='用户姓名')
+    avatar = models.ImageField(upload_to='user',default='default.png',verbose_name='用户头像')
+    score = models.IntegerField(default=0,verbose_name='用户积分')
+    is_deleted = models.BooleanField(default=False,verbose_name='是否删除')
+    create_time = models.DateTimeField(auto_now_add=True,verbose_name='创建时间')
+
+    class Meta:
+        verbose_name_plural = '用户表'
+    def __str__(self):
+        return str(self.name)
+
+
+

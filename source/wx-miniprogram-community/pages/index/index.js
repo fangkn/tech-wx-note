@@ -6,7 +6,10 @@ Page({
     
     banner_list: [{"img":"/images/banner/banner001.png","order": 100}],
     notice_list:[{"title":"通知标题","content":"这是一条本地通知！","img":"","order": 100}],
-    bottom_list:[{"img":"/images/home/home_1.png","order": 100}]
+    bottom_list:[{"img":"/images/home/home_1.png","order": 100},
+                {"img":"/images/home/home_2.png","order": 99},
+                {"img":"/images/home/home_3.png","order": 98},
+              {"img":"/images/home/home_4.png","order": 97}]
   },
 
   /**

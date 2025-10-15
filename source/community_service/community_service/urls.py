@@ -27,4 +27,5 @@ urlpatterns = [
     path('media/<path:path>', serve, {'document_root': settings.MEDIA_ROOT}),
     path('community/welcome', views.welcome, name='welcome'),
     path('community/index', views.index, name='index'),
+    path('community/collecton', views.collecton, name='collecton'),
 ]
