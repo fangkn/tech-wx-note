@@ -11,7 +11,7 @@ AI 只助手，不是我们的“第二大脑”，别想以后有什么不懂�
 
 **2025-10-01**
 
-国庆加班，补了一下 前端的 flex 布局的知识。 [前端知识flex布局学习](./前端知识flex布局学习.md)
+国庆加班，补了一下 前端的 flex 布局的知识。 [前端知识flex布局学习](https://github.com/fangkn/tech-frontend-note/blob/main/%E5%89%8D%E7%AB%AFflex%E5%B8%83%E5%B1%80%E5%AD%A6%E4%B9%A0.md)
 
 **2025-10-08**
 
@@ -21,9 +21,11 @@ AI 只助手，不是我们的“第二大脑”，别想以后有什么不懂�
 
 python django 笔记 ：[python-django笔记.md](./python-django笔记.md)
 
+**2025-10-15**
 
+去掉了 前端知识flex布局学习的笔记，放到了前端学习笔记中了。
 
-
+[https://github.com/fangkn/tech-frontend-note](https://github.com/fangkn/tech-frontend-note)
 
 
 
