@@ -26,7 +26,6 @@ Page({
           const members = res.data.data.map(item => ({
             id: item.id,
             name: item.name,
-            // 将后端 area 字段映射到页面的两行文案
             region: `网格区域 | ${item.area || '未分配'}`,
             building: item.area || '未分配',
             avatar: item.avatar,
@@ -95,13 +94,14 @@ Page({
 
   },
   
-  switchTab(e) {
-    const tab = e.currentTarget.dataset.tab
-    this.setData({ activeTab: tab })
+  goToForm() {
+    wx.navigateTo({ url: '/pages/form/form' })
   },
-  
-  onDelete(e) {
+  goToStatistics() {
+    wx.navigateTo({ url: '/pages/statistics/statistics' })
+  },
 
+  onDelete(e) {
     wx.showModal({
       title: '确认删除',
       content: '确定删除该采集区域吗？',

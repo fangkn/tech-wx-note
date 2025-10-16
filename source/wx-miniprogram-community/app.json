@@ -10,7 +10,11 @@
     "pages/heart/heart",
     "pages/goods/goods",
     "pages/voice/voice",
-    "pages/face/face"
+    "pages/face/face",
+    "pages/form/form",
+    "pages/camera/camera",
+    "pages/statistics/statistics"
+
   ],
   "window": {
     "navigationBarTitleText": "智慧社区",

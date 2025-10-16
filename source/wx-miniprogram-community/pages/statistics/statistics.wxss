@@ -1,0 +1,71 @@
+/* 统计页列表样式（从 collection 复制并精简） */
+
+.page { 
+  background: #f7f7f7;
+  min-height: 100vh;
+}
+
+.header {
+  background: #fff;
+  padding: 24rpx 30rpx;
+  margin-bottom: 16rpx;
+}
+
+.stat-item {
+  font-size: 28rpx;
+  color: #333;
+  padding: 10rpx 0;
+}
+
+.list {
+  background: #fff;
+}
+
+.list-title {
+  padding: 24rpx 30rpx;
+  font-size: 26rpx;
+  color: #888;
+}
+
+.member-item {
+  display: flex;
+  align-items: center;
+  padding: 20rpx 30rpx;
+  border-top: 1px solid #f0f0f0;
+}
+
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 16rpx;
+  background: #eee;
+}
+
+.info {
+  flex: 1;
+  margin-left: 24rpx;
+}
+
+.name {
+  font-size: 32rpx;
+  color: #333;
+}
+
+.region {
+  margin-top: 8rpx;
+  font-size: 26rpx;
+  color: #999;
+}
+
+.building {
+  margin-top: 8rpx;
+  font-size: 30rpx;
+  color: #22c1b7;
+  font-weight: 600;
+}
+
+.delete {
+  color: #f54e4e;
+  font-size: 26rpx;
+  padding: 12rpx 20rpx;
+}

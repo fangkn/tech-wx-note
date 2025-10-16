@@ -1,21 +1,22 @@
 <view class="page">
-  <!-- 顶部统计卡片 -->
-  <view class="header">
+
+ <view class="header">
     <view class="header-text">今日异常疑似人员（人）</view>
     <view class="count">{{todayCount}}</view>
   </view>
 
   <!-- 标签切换 -->
   <view class="tabs">
-    <view class="tab {{activeTab==='register' ? 'active' : ''}}" data-tab="register" bindtap="switchTab">信息登记</view>
+    <view class="tab" bindtap="goToForm">信息登记</view>
     <view class="divider"></view>
-    <view class="tab {{activeTab==='stats' ? 'active' : ''}}" data-tab="stats" bindtap="switchTab">数据统计</view>
+    <view class="tab" bindtap="goToStatistics">数据统计</view>
   </view>
 
-  <!-- 信息登记列表 -->
-  <view wx:if="{{activeTab==='register'}}" class="list">
+  <!-- 信息登记列表（保留在本页底部） -->
+  
+  <view class="list">
     <view class="list-title">社区信息列表（{{members.length}}人）</view>
-       <block wx:for="{{members}}" wx:key="id">
+    <block wx:for="{{members}}" wx:key="id">
       <view class="member-item">
         <image class="avatar" src="{{item.avatar}}" mode="aspectFill" />
         <view class="info">
@@ -26,11 +27,5 @@
         <view class="delete" data-id="{{item.id}}" bindtap="onDelete">删除</view>
       </view>
     </block>
-  </view>
-
-  <!-- 数据统计占位 -->
-  <view wx:elif="{{activeTab==='stats'}}" class="stats">
-    <view class="stat-item">今日登记人数：{{members.length}}</view>
-    <view class="stat-item">今日异常人数：{{todayCount}}</view>
   </view>
 </view>

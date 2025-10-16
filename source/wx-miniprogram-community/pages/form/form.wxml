@@ -1,0 +1,23 @@
+<view class="page">
+
+  <!-- 上传占位/照片预览 -->
+  <view class="upload" bindtap="goToCamera">
+    <image wx:if="{{photo}}" class="photo" src="{{photo}}" mode="aspectFill" />
+    <view wx:else class="placeholder">
+      <text class="camera">📷</text>
+    </view>
+  </view>
+
+  <!-- 姓名 -->
+  <view class="field">
+    <input class="input" placeholder="请输入姓名" value="{{name}}" bindinput="onInputName" />
+  </view>
+
+  <!-- 地址 -->
+  <view class="field">
+    <input class="input" placeholder="请输入地址" value="{{address}}" bindinput="onInputAddress" type="number" />
+  </view>
+
+  <!-- 提交按钮 -->
+  <button class="submit" bindtap="onSubmit">提交</button>
+</view>

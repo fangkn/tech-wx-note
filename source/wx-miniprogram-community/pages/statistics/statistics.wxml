@@ -1,0 +1,7 @@
+<view class="page">
+  <!-- 顶部统计卡片（仅显示两项指标） -->
+  <view class="header">
+    <view class="stat-item">今天登记人数：{{registerCount}}</view>
+    <view class="stat-item">今日异常人数：{{todayCount}}</view>
+  </view>
+</view>
