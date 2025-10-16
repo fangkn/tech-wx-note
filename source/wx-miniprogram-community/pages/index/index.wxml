@@ -13,6 +13,8 @@
 
 </swiper>
 </view>
+
+
 <!-- 通知-->
 <van-notice-bar left-icon="volume-o" >{{notice_list[0].content}}</van-notice-bar>
 
