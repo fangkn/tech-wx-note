@@ -1,2 +1,56 @@
 <!--pages/activity/activity.wxml-->
-<text>pages/activity/activity.wxml</text>
+<view class="page">
+  <!-- 页面标题 -->
+  <view class="header">
+    <text class="title">社区活动</text>
+  </view>
+
+  <!-- 活动列表 -->
+  <scroll-view class="activity-list" scroll-y="true" enable-back-to-top="true">
+    <view class="activity-item" wx:for="{{activities}}" wx:key="id" bindtap="onActivityTap" data-id="{{item.id}}">
+      <!-- 活动封面图 -->
+      <view class="activity-cover">
+        <image src="{{item.coverImage || '/images/default-activity.png'}}" mode="aspectFill" class="cover-image"></image>
+        <view class="status-tag" wx:if="{{item.status}}">{{item.statusText}}</view>
+      </view>
+      
+      <!-- 活动信息 -->
+      <view class="activity-info">
+        <view class="activity-title">{{item.title}}</view>
+        <view class="activity-desc">{{item.description}}</view>
+        
+        <view class="activity-meta">
+          <view class="meta-item">
+            <text class="icon">📅</text>
+            <text class="text">{{item.startTime}}</text>
+          </view>
+          <view class="meta-item">
+            <text class="icon">📍</text>
+            <text class="text">{{item.location}}</text>
+          </view>
+          <view class="meta-item">
+            <text class="icon">👥</text>
+            <text class="text">{{item.participantCount}}/{{item.maxParticipants}}人</text>
+          </view>
+        </view>
+        
+        <view class="activity-footer">
+          <view class="organizer">主办：{{item.organizer}}</view>
+          <view class="join-btn" wx:if="{{item.canJoin}}">立即报名</view>
+        </view>
+      </view>
+    </view>
+    
+    <!-- 空状态 -->
+    <view class="empty-state" wx:if="{{activities.length === 0 && !loading}}">
+      <text class="empty-icon">🎪</text>
+      <text class="empty-text">暂无活动</text>
+      <text class="empty-desc">敬请期待更多精彩活动</text>
+    </view>
+    
+    <!-- 加载状态 -->
+    <view class="loading-state" wx:if="{{loading}}">
+      <text class="loading-text">加载中...</text>
+    </view>
+  </scroll-view>
+</view>
