@@ -104,7 +104,7 @@ Page({
           participantCount: 80,
           maxParticipants: 100,
           status: 'upcoming',
-          statusText: '即将开始',
+          statusText: '即将开始', 
           canJoin: true
         },
         {

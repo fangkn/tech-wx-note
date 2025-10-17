@@ -1,2 +1,76 @@
 <!--pages/notice/notice.wxml-->
-<text>pages/notice/notice.wxml</text>
+<view class="notice-container">
+  <!-- 页面标题 -->
+  <view class="page-header">
+    <text class="page-title">社区通知</text>
+  </view>
+
+  <!-- 通知列表 -->
+  <scroll-view class="notice-list" scroll-y="true" refresher-enabled="true" 
+               bindrefresherrefresh="onPullDownRefresh" refresher-triggered="{{loading}}">
+    
+    <!-- 通知卡片 -->
+    <view class="notice-item" wx:for="{{notices}}" wx:key="id" bindtap="onNoticeTap" data-notice="{{item}}">
+      <!-- 通知头部 -->
+      <view class="notice-header">
+        <view class="notice-type {{item.type}}">
+          <text class="type-icon">{{item.typeIcon}}</text>
+          <text class="type-text">{{item.typeName}}</text>
+        </view>
+        <view class="notice-status">
+          <text class="status-text {{item.isRead ? 'read' : 'unread'}}">
+            {{item.isRead ? '已读' : '未读'}}
+          </text>
+        </view>
+      </view>
+
+      <!-- 通知内容 -->
+      <view class="notice-content">
+        <text class="notice-title">{{item.title}}</text>
+        <text class="notice-summary">{{item.summary}}</text>
+      </view>
+
+      <!-- 通知元信息 -->
+      <view class="notice-meta">
+        <view class="meta-item">
+          <text class="meta-icon">📅</text>
+          <text class="meta-text">{{item.publishTime}}</text>
+        </view>
+        <view class="meta-item">
+          <text class="meta-icon">👤</text>
+          <text class="meta-text">{{item.publisher}}</text>
+        </view>
+        <view class="meta-item" wx:if="{{item.priority === 'high'}}">
+          <text class="priority-tag">重要</text>
+        </view>
+      </view>
+
+      <!-- 未读标识 -->
+      <view class="unread-dot" wx:if="{{!item.isRead}}"></view>
+    </view>
+
+    <!-- 空状态 -->
+    <view class="empty-state" wx:if="{{notices.length === 0 && !loading}}">
+      <text class="empty-icon">📢</text>
+      <text class="empty-text">暂无通知</text>
+      <text class="empty-desc">当前没有新的社区通知</text>
+    </view>
+
+    <!-- 加载状态 -->
+    <view class="loading-state" wx:if="{{loading}}">
+      <text class="loading-text">加载中...</text>
+    </view>
+  </scroll-view>
+
+  <!-- 底部操作栏 -->
+  <view class="bottom-actions">
+    <view class="action-btn" bindtap="onMarkAllRead">
+      <text class="action-icon">✓</text>
+      <text class="action-text">全部已读</text>
+    </view>
+    <view class="action-btn" bindtap="onRefresh">
+      <text class="action-icon">🔄</text>
+      <text class="action-text">刷新</text>
+    </view>
+  </view>
+</view>
