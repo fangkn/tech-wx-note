@@ -7,11 +7,6 @@
   padding-bottom: 120rpx;
 }
 
-/* 页面标题 */
-.page-header {
-  padding: 60rpx 40rpx 40rpx;
-  text-align: center;
-}
 
 .page-title {
   font-size: 48rpx;
@@ -22,8 +17,8 @@
 
 /* 通知列表 */
 .notice-list {
-  height: calc(100vh - 200rpx); /*设置列表高度为 视窗高度减去 200rpx */
-  padding: 0 30rpx;
+  height: calc(100vh - 120rpx); /*设置列表高度为 视窗高度减去 200rpx */
+  padding: 24rpx 30rpx 0;
   box-sizing: border-box; /* 关键：让 padding 参与宽度计算 */
   padding-right: calc(30rpx + env(safe-area-inset-right)); /* 兼容 iPhone 安全区 */
 }

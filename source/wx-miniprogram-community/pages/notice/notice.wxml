@@ -1,9 +1,5 @@
 <!--pages/notice/notice.wxml-->
 <view class="notice-container">
-  <!-- 页面标题 -->
-  <view class="page-header">
-    <text class="page-title">社区通知</text>
-  </view>
 
   <!-- 通知列表 -->
   <scroll-view class="notice-list" scroll-y="true" refresher-enabled="true" 
