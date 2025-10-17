@@ -27,9 +27,9 @@ python django 笔记 ：[python-django笔记.md](./python-django笔记.md)
 
 [https://github.com/fangkn/tech-frontend-note](https://github.com/fangkn/tech-frontend-note)
 
+**2025-10-17**
 
-
-
+有点不想写 django 了。有个不好的意知在脑子不断的拉扯我，说：这是学习小程序开的，写django 干吗呢。小程序几个主要的页面已经完成差不多了。
 
 
 
