@@ -6,12 +6,6 @@
   padding: 20rpx;
 }
 
-/* 页面标题 */
-.header {
-  text-align: center;
-  padding: 40rpx 0;
-}
-
 .title {
   font-size: 48rpx;
   font-weight: bold;
@@ -21,7 +15,11 @@
 
 /* 活动列表 */
 .activity-list {
-  height: calc(100vh - 200rpx);
+  height: calc(100vh - 120rpx); /*设置列表高度为 视窗高度减去 200rpx */
+  padding: 15rpx 5rpx 0;
+  box-sizing: border-box; /* 关键：让 padding 参与宽度计算 */
+  padding-right: calc(5rpx + env(safe-area-inset-right)); /* 兼容 iPhone 安全区 */
+
 }
 
 .activity-item {

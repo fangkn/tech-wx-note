@@ -1,9 +1,5 @@
 <!--pages/activity/activity.wxml-->
 <view class="page">
-  <!-- 页面标题 -->
-  <view class="header">
-    <text class="title">社区活动</text>
-  </view>
 
   <!-- 活动列表 -->
   <scroll-view class="activity-list" scroll-y="true" enable-back-to-top="true">
